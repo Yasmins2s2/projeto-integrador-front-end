@@ -1,0 +1,34 @@
+.cabecalho{
+    background-color: aqua;
+    height: 110px;
+    max-width: 980px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho .logotipo img {
+    height: 100%;
+    width: 200px /*auto;*/
+}
+
+.cabecalho .menu {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cabecalho .menu .menu-item {
+    height: 80px;
+    background-color: blueviolet;
+    width: 33.33%;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url("https://cdn2.iconfinder.com/data/icons/squircle-ui/32/Edit-512.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
