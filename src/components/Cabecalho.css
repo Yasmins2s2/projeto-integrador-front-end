@@ -1,5 +1,5 @@
 .cabecalho{
-    background-color: aqua;
+    background-color: rgb(158, 95, 209);
     height: 110px;
     max-width: 980px;
     width: 100%;
@@ -20,7 +20,7 @@
 
 .cabecalho .menu .menu-item {
     height: 80px;
-    background-color: blueviolet;
+    background-color: rgb(191, 152, 228);
     width: 33.33%;
     flex-shrink: 0;
 
