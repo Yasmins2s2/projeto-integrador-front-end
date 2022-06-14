@@ -1,4 +1,4 @@
-import Cabecalho from "./components/Cabecalho";
+import Cabecalho from "./components/Cabecalhofeed";
 import './App.css';
 import CabecalhoSite from "./components/CabecalhoSite";
 
