@@ -1,10 +1,12 @@
 import Cabecalho from "./components/Cabecalho";
 import './App.css';
+import CabecalhoSite from "./components/CabecalhoSite";
 
 const App = function() {
   return (
    <div className="app">
-     <Cabecalho/>
+      <CabecalhoSite/>
+      <Cabecalho/>
      </div>
   );
 }

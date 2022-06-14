@@ -1,0 +1,53 @@
+.CabecalhoSiteFrom{
+    display: inline-flex;
+}
+
+.logo{
+    width: 10vw;
+    height: 10vh;
+}
+
+.CabecalhoSite{
+    background: black;
+    width: 100%;
+}
+
+.ImagemBotao{
+    height: 35px;
+    width: 35px;
+}
+
+.pesquisa{
+    position: absolute;
+    top: 2%;
+    left: 80%;
+    background: #5c18bb;
+    height: 30px;
+    padding:15px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-input-placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.PesquisaCabecalho{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: azure;
+    width: 0;
+    transition: .6s;
+}
+.botaoPesquisa{
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
