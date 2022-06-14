@@ -1,8 +1,8 @@
-import './Cabecalho.css'
+import './Cabecalhofeed.css'
 
 const Cabecalho = function() {
     return (
-      <header className="cabecalho">
+      <header className="cabecalhofeed">
         <a  className='logotipo' href=""><img src="" alt="" /></a>
         <nav className='menu'>
           <a className='menu-item1' href="">Publicações</a>
@@ -12,7 +12,7 @@ const Cabecalho = function() {
         <div className=''></div>
       </header>
   
-    );
+    )
   }
   
   export default Cabecalho;

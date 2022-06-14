@@ -1,4 +1,4 @@
-.cabecalho{
+.cabecalhofeed{
     background-color: rgb(158, 95, 209);
     height: 110px;
     max-width: 3000px;
@@ -8,20 +8,20 @@
     justify-content: space-around;
 }
 
-.cabecalho .logotipo img {
+.cabecalhofeed .logotipo img {
     height: 100%;
     width: 200px /*auto;*/
 }
 
-.cabecalho .menu {
+.cabecalhofeed .menu {
     display: flex;
     align-items: flex-end;
 }
  
-.cabecalho .menu .menu-item1 {
+.cabecalhofeed .menu .menu-item1 {
     height: 80px;
     background-color: rgb(191, 152, 228);
-    width: 33.33%;
+    width: 45%;
     flex-shrink: 0;
 
     display: flex;
@@ -33,10 +33,10 @@
     background-position: top center;
 }
 
-.cabecalho .menu .menu-item2 {
+.cabecalhofeed .menu .menu-item2 {
     height: 80px;
     background-color: rgb(191, 152, 228);
-    width: 33.33%;
+    width: 45%;
     flex-shrink: 0;
 
     display: flex;
@@ -48,10 +48,10 @@
     background-position: top center;
 }
 
-.cabecalho .menu .menu-item3 {
+.cabecalhofeed .menu .menu-item3 {
     height: 80px;
     background-color: rgb(191, 152, 228);
-    width: 33.33%;
+    width: 25%;
     flex-shrink: 0;
 
     display: flex;
