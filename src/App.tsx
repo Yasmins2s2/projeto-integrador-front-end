@@ -2,6 +2,7 @@ import Cabecalho from "./components/Cabecalhofeed";
 import './App.css';
 import CabecalhoSite from "./components/CabecalhoSite";
 import Cadastrar from "./components/Cadastrar";
+import RodapeSite from "./components/RodapeSite";
 
 const App = function() {
   return (
@@ -9,6 +10,7 @@ const App = function() {
       <CabecalhoSite/>
       <Cabecalho/>
       <Cadastrar/>
+      <RodapeSite/>
      </div>
   );
 }
