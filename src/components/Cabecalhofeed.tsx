@@ -1,4 +1,5 @@
-import './Cabecalhofeed.css'
+import './Cabecalhofeed.css';
+import './cabecalho2' ;
 
 const Cabecalho = function() {
     return (
