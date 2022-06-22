@@ -10,7 +10,6 @@ const Cabecalho = function() {
           <a className='menu-item2' href="">Notificações</a>
           <a className='menu-item3' href="">Chat</a>
         </nav>
-        <div className=''></div>
       </header>
   
     )
