@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+footer{
+    background: #8667b1;
+    width: 100%;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+.main-content{
+    display: flex;
+}
+.main-content, .left-box,.center-box, .rigth-box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+h2{
+    margin: 20px 0;
+}
+.box h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.link1, .link2, .link3, .link4{
+    width: 20px;
+    height: 20px;
+    background: #1a1a1a;
+    padding: 0 2px;
+    margin: 30px 0 0 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.social{
+    margin-right: 0 30px;
+}
+.social a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.social :hover{
+    background: red;
+}
+.email a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+}
+.rigth-box form input, .rigth-box form textarea{
+    width: 100%;
+    font-size: 17px;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+
+}
+.rigth-box form input{
+    height: 35px;
+
+}
+.rigth-box form input:focus,
+ .rigth-box form textarea:focus{
+    outline-color: #3498db;
+ }
+ .rigth-box form text{
+    font-size: 17px;
+    margin-bottom: 2px;
+    color: 656565;
+ }
+ .rigth-box form .btn{
+    margin-top: 10px;
+ }
+ .rigth-box form .btn button{
+    height: 40px;
+    width: 100%;
+    background: #f12020;
+    cursor: pointer;
+    transition: 0.5s;
+
+ }
+ .rigth-box form .btn button:hover{
+    background-color: #111;
+ }
+ .rigth-box content::after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background: #f12020;
+ }
