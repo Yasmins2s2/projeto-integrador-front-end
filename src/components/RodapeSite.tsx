@@ -10,7 +10,7 @@ const RodapeSite = function(){
                 <div className="left-box">
                     <h2>Sobre nós</h2>
                     <div className="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere dolor ea eveniet, obcaecati velit rem natus numquam enim minus asperiores placeat officiis modi repellendus incidunt nulla commodi hic? Ut?</p>
+                        <p>Fomos criados por programadores iniciantes, que além de amarem a tecnologia, tambem amam a moda. "Nosso intuito foi criar um site que ajuda pessoas com ideias e criações de looks e, assim, mostrar que não existe certo e errado no moda". Visamos muito a diversidade entre nosso usuarios, sendo assim, pensamos em tudo para deixa-los o mais satisfeito possivel. </p>
                     
                         <div className="social">
                             <a href=""> <FontAwesomeIcon className="link1" icon={faInstagram} /> </a>

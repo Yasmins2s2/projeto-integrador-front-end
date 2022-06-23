@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Cadastrar.css"
 import ImagemCadastrar from "../imagens/digital.svg"
 import PaginaComum from "./PaginaComum";
@@ -30,14 +31,21 @@ const Cadastrar = function(){
                             <input type="date" name="Data" placeholder="Data"/>
                     </div>
                         <div className="textfield">
+                            <label htmlFor="phone"> Telefone</label>
+                            <input type="phone" name="phone" placeholder="Telefone"/>
+                        </div>
+                        <div className="textfield">
                             <label htmlFor="address"> CEP</label>
                             <input type="address" name="CEP" placeholder="CEP"/>
                         </div>
                 
                         <button className="btn-cadastrar"> Cadastrar</button>
+                        <Link to="/login" className="btn-cadastrologin">Login</Link>
                     </div>
                 </div>
             </div>
+
+       
         </PaginaComum>
            
        
