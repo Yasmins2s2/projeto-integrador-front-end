@@ -11,4 +11,7 @@ type Peca = {
     tipo: TipoPeca
 }
 
-export default Peca
+export default Peca;
+export {
+    TipoPeca
+};
