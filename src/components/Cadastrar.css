@@ -1,15 +1,18 @@
 
 .main-cadastrar{
+    flex-grow: 1;
     width: 100vw;
-    height: 100vh;
+    /*height: 100vh;*/
     background: #c3bad8c4;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .left-cadastro{
-    width: 50vw;
-    height: 100vh;
+    flex-grow: 1;
+    /*width: 50vw;*/
+    /*height: 100vh;*/
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -24,8 +27,10 @@
     margin-right: 30px;
 }
 .rigth-cadastro{
-    width: 50vw;
-    height: 100vh;
+    flex-grow: 1;
+
+    /*width: 50vw;
+    height: 100vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
