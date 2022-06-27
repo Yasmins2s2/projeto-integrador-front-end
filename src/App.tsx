@@ -14,12 +14,11 @@ const App = function() {
         <Routes>
           <Route path='/login' element={<LoginSite/>} />
           <Route path='/cadastrar' element={<Cadastrar/>} />
-          <Route path='/feed' element={<Feed />} />
-          <Route path='/guardaroupa' element={<h1>teste</h1>}/>
+          <Route path='/feed' element={<Feed/>} />
+          <Route path='/guardaroupa' element={<GuardaRoupa/>}/>
+          
         </Routes>
       </BrowserRouter>
-      
-      
 
      </div>
   );
