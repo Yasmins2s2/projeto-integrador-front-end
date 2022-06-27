@@ -1,0 +1,26 @@
+.container{
+    background: yellow;
+    width: 100%;
+    height: 100px;
+}
+.icones{
+    text-align: right; 
+}
+.l1, .l2, .l3{
+    margin: 10px;
+    margin-right: 0 30px;  
+}
+.l3{
+    margin-right: 100px;
+}
+.l1, .l2, .l3 a{
+    margin-right: 20px;
+    margin: 20px 20px 20px 20px;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.Embaralhar{
+    margin-right: 1600px;
+    margin-top: 50px;
+}

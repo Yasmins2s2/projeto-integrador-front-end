@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    /*color: white;*/
 }
 footer{
     background: #8667b1;
@@ -10,6 +10,15 @@ footer{
     bottom: 0px;
     width: 100%;
     background: #111;
+    color: #fff;
+}
+
+footer a,
+footer a:link,
+footer a:hover,
+footer a:active,
+footer a:visited {
+    color: #fff;
 }
 .main-content{
     display: flex;
