@@ -53,16 +53,21 @@ h2{
 .social a{
     text-decoration: none;
     margin-right: 20px;
+    color: #fff;
 }
 .social :hover{
     background: red;
+    transition: 1.5s;
+    border-radius: 5px;
 }
+    
 .email a {
     width: 45px;
     height: 45px;
     line-height: 45px;
     text-align: center;
     border-radius: 5px;
+    color: #fff;
 }
 .rigth-box form input, .rigth-box form textarea{
     width: 100%;
@@ -91,7 +96,7 @@ h2{
  .rigth-box form .btn button{
     height: 40px;
     width: 100%;
-    background: #f12020;
+    background: #c3bad8c4;
     cursor: pointer;
     transition: 0.5s;
 

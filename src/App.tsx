@@ -20,8 +20,6 @@ const App = function() {
           <Route path='/eldes' element={<Eldes />}/>
         </Routes>
       </BrowserRouter>
-      
-      
 
      </div>
   );
