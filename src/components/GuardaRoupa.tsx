@@ -33,6 +33,9 @@ const GuardaRoupa = function(){
                 </div>
             </section>
         </>
+ 
+     
     );
-};
-export default GuardaRoupa;
+  }
+  
+  export default GuardaRoupa;

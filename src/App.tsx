@@ -14,9 +14,8 @@ const App = function() {
         <Routes>
           <Route path='/login' element={<LoginSite/>} />
           <Route path='/cadastrar' element={<Cadastrar/>} />
-          <Route path='/feed' element={<Feed/>} />
-          <Route path='/guardaroupa' element={<GuardaRoupa/>}/>
-          
+          <Route path='/feed' element={<Feed />} />
+          <Route path='/guardaroupa' element={<GuardaRoupa />}/>
         </Routes>
       </BrowserRouter>
 
