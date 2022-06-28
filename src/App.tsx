@@ -4,7 +4,7 @@ import './App.css';
 import CadsatroGuardaRoupa from './CadastroGuardaRoupa';
 import Cadastrar from './components/Cadastrar';
 import Feed from './components/Feed';
-import GuardaRoupa from './components/GuardaRoupa';
+import CarrosselGr from './components/CarrosselGr';
 import LoginSite from './components/LoginSite';
 import Eldes from './Eldes';
 
@@ -17,7 +17,7 @@ const App = function() {
           <Route path='/login' element={<LoginSite/>} />
           <Route path='/cadastrar' element={<Cadastrar/>} />
           <Route path='/feed' element={<Feed />} />
-          <Route path='/guardaroupa' element={<GuardaRoupa />}/>
+          <Route path='/CarrosselGr' element={<CarrosselGr />}/>
           <Route path='/cadastro-guarda-roupa' element={<CadsatroGuardaRoupa />} />
         </Routes>
       </BrowserRouter>
