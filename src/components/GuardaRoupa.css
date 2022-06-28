@@ -44,7 +44,7 @@
     padding: 10px;
     margin-right: 80px;
 }
-.iconesg .iconegr1 .iconegr2 .iconegr3{
-   text-align: right;
-
+.iconesg .iconegr1 .iconegr2{
+    justify-content: right;
+    justify-items: right;
 }

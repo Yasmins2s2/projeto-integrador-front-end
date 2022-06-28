@@ -1,9 +1,9 @@
 import './Cabecalhofeed.css';
-import './cabecalho2' ;
+import './CabecalhoFGR' ;
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faHeart, faSquarePlus, faUser, faComment, faBookmark} from '@fortawesome/free-regular-svg-icons';
-import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles} from '@fortawesome/free-solid-svg-icons';
-import imagem1 from "../imagens/roupa.jpg"
+import {faHeart, faSquarePlus, faUser, faBookmark, faComment} from '@fortawesome/free-regular-svg-icons';
+import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles, faBookBookmark} from '@fortawesome/free-solid-svg-icons';
+import imagem1 from "../imagens/looks-tumblr.jpg"
 
 const Cabecalho = function() {
     return (
@@ -23,18 +23,19 @@ const Cabecalho = function() {
            <div className='conteudo'>
             <div className='Foto1'>
               <img src="" alt="" />
-                @LukacomK 
+                @Isabella 
                 <i></i>
                 <i></i>
                 <i></i>
             </div>
             <div className='Foto1'>
-              <img src={imagem1} alt="" />
+            <img src={imagem1} alt="" />
+            </div>
+            <div className='icones3'>
                 <FontAwesomeIcon icon={faHeart} />
-                <FontAwesomeIcon icon={faComment} />
+                <FontAwesomeIcon icon= {faComment} />
                 <FontAwesomeIcon icon={faBookmark} />
             </div>
-            
 
            </div>
          </div>
@@ -53,3 +54,4 @@ const Cabecalho = function() {
   }
   
   export default Cabecalho;
+  /* <img src={imagem1} alt="" />*/
