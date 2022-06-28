@@ -1,64 +1,33 @@
-.cabecalhofeed{
-    background-color: rgb(158, 95, 209);
-    height: 110px;
-    max-width: 3000px;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-around;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.cabecalhofeed .logotipo img {
+.CabecalhoFeed{
+    display: flex;
+    background-color:aqua;
+    width: 100vw; 
     height: 100%;
-    width: 200px /*auto;*/
 }
 
-.cabecalhofeed .menu {
-    display: flex;
-    align-items: flex-end;
-}
- 
-.cabecalhofeed .menu .menu-item1 {
-    height: 80px;
-    background-color: rgb(191, 152, 228);
-    width: 45%;
-    flex-shrink: 0;
-
-    display: flex;
-    align-items: flex-end;
-
-    background-image: url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: top center;
+.Logo {
+    text-align: left;
 }
 
-.cabecalhofeed .menu .menu-item2 {
-    height: 80px;
-    background-color: rgb(191, 152, 228);
-    width: 45%;
-    flex-shrink: 0;
-
-    display: flex;
-    align-items: flex-end;
-
-    background-image: url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: top center;
+.icones {
+    text-align: right;
 }
-
-.cabecalhofeed .menu .menu-item3 {
-    height: 80px;
-    background-color: rgb(191, 152, 228);
-    width: 25%;
-    flex-shrink: 0;
-
-    display: flex;
-    align-items: flex-end;
-
-    background-image: url("https://th.bing.com/th/id/R.b3dc5490eec37609b3f86338904c845e?rik=YusWhMZXg46fJA&riu=http%3a%2f%2fblogfiles.naver.net%2f20141228_98%2fwoowon80_1419767990962Mg2VQ_PNG%2f32_001_11.png&ehk=zYi53gPBgN39HuEt0bszqrw%2b6iEhu6qqOK2ev1V0IxI%3d&risl=&pid=ImgRaw&r=0");
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: top center;
+.border{
+    margin: 50PX;
+    height: auto;
+    border: 2px solid black;
+}
+footer{
+    background-color: aqua;
+    padding: 50px;
+}
+.icones2{
+    padding: 10px;
+    
 }
