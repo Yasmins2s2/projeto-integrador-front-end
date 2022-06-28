@@ -1,11 +1,13 @@
 
 .main-cadastrar{
+    flex-grow: 1;
     width: 100vw;
     flex-grow: 1;
     background: #c3bad8c4;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .left-cadastro{
     flex-grow: 1;
