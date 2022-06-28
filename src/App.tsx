@@ -6,6 +6,7 @@ import Cadastrar from './components/Cadastrar';
 import Feed from './components/Feed';
 import GuardaRoupa from './components/GuardaRoupa';
 import LoginSite from './components/LoginSite';
+import Eldes from './Eldes';
 
 const App = function() {
   return (

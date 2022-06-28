@@ -1,0 +1,25 @@
+.main-eldes {
+    background-color: brown;
+
+    width: 100%;
+
+    display: flex;
+}
+
+.main-eldes .left-eldes {
+    background-color: blue;
+
+    flex-grow: 1;
+}
+
+.main-eldes .right-eldes {
+    background-color: blueviolet;
+
+    flex-grow: 1;
+}
+
+.main-eldes .right-eldes .card-eldes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
