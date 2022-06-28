@@ -1,0 +1,25 @@
+main{
+background: black;
+width: 1369px;
+
+}
+
+.TextInicio > h1 {
+    margin-left: 20px;
+    margin-top: 25px;
+    font-family: 'Dorsa', sans-serif;
+    letter-spacing: .1em;
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+}
+.iconesfgt{
+ color: #fff;
+ display: flex;
+ text-align: right;
+ justify-content: right;
+}
+.iconegr1, .iconegr2, .iconegr3{
+    padding: 10px;
+}

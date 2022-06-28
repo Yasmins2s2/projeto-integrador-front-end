@@ -1,5 +1,5 @@
 import './Cabecalhofeed.css';
-import './cabecalho2' ;
+import './CabecalhoFGR' ;
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHeart, faSquarePlus, faUser, faComment, faBookmark} from '@fortawesome/free-regular-svg-icons';
 import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles} from '@fortawesome/free-solid-svg-icons';
