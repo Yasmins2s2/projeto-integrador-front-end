@@ -41,7 +41,7 @@ const Cabecalho = function() {
        </main>
        <footer>
          Rodapé
-         <div className='icones2'>
+         <div className='icones3'>
             <FontAwesomeIcon icon={faHouseChimney} />
             <FontAwesomeIcon icon={faMagnifyingGlass} />
             <FontAwesomeIcon icon={faWandMagicSparkles} />

@@ -18,7 +18,7 @@ import calca4 from "../imagens/calça4.png"
 const CarrosselGr = function() {
     return(
         <>  
-        <div className="main-guardaroupa" >
+        
         <div className="carrossel-left">
             <div className="painel-swipers">
                     <Swiper
@@ -44,7 +44,7 @@ const CarrosselGr = function() {
                                                     <img src={img1} alt="" />
                                                 </div>
                                                 <div className="media-icons">
-                                                <i> <FontAwesomeIcon icon={faStore} /></i>
+                                                <i className="store"> <FontAwesomeIcon icon={faStore} /></i>
                                                     <i> <FontAwesomeIcon icon={faFacebook} /></i>
                                                     <i><FontAwesomeIcon icon={faTwitter} /></i>
                                                 </div>
@@ -70,7 +70,7 @@ const CarrosselGr = function() {
                                                     <img src={calca2} alt="" />
                                                 </div>
                                                 <div className="media-icons">
-                                                <i> <FontAwesomeIcon icon={faStore} /></i>
+                                                <i className="store"> <FontAwesomeIcon icon={faStore} /></i>
                                                     <i> <FontAwesomeIcon icon={faFacebook} /></i>
                                                     <i><FontAwesomeIcon icon={faTwitter} /></i>
                                                 </div>
@@ -96,7 +96,7 @@ const CarrosselGr = function() {
                                                     <img src={calca3} alt="" />
                                                 </div>
                                                 <div className="media-icons">
-                                                <i> <FontAwesomeIcon icon={faStore} /></i>
+                                                <i className="store"> <FontAwesomeIcon icon={faStore} /></i>
                                                     <i> <FontAwesomeIcon icon={faFacebook} /></i>
                                                     <i><FontAwesomeIcon icon={faTwitter} /></i>
                                                 </div>
@@ -122,7 +122,7 @@ const CarrosselGr = function() {
                                                     <img src={calca4} alt="" />
                                                 </div>
                                                 <div className="media-icons">
-                                                <i> <FontAwesomeIcon icon={faStore} /></i>
+                                                <i className="store"> <FontAwesomeIcon icon={faStore} /></i>
                                                     <i> <FontAwesomeIcon icon={faFacebook} /></i>
                                                     <i><FontAwesomeIcon icon={faTwitter} /></i>
                                                 </div>
@@ -148,7 +148,7 @@ const CarrosselGr = function() {
                                                     <img src={img1} alt="" />
                                                 </div>
                                                 <div className="media-icons">
-                                                <i> <FontAwesomeIcon icon={faStore} /></i>
+                                                <i className="store"> <FontAwesomeIcon icon={faStore} /></i>
                                                     <i> <FontAwesomeIcon icon={faFacebook} /></i>
                                                     <i><FontAwesomeIcon icon={faTwitter} /></i>
                                                 </div>
@@ -174,7 +174,7 @@ const CarrosselGr = function() {
                                                     <img src={img1} alt="" />
                                                 </div>
                                                 <div className="media-icons">
-                                                <i> <FontAwesomeIcon icon={faStore} /></i>
+                                                <i className="store"> <FontAwesomeIcon icon={faStore} /></i>
                                                     <i> <FontAwesomeIcon icon={faFacebook} /></i>
                                                     <i><FontAwesomeIcon icon={faTwitter} /></i>
                                                 </div>
@@ -200,7 +200,7 @@ const CarrosselGr = function() {
                                                     <img src={img1} alt="" />
                                                 </div>
                                                 <div className="media-icons">
-                                                <i> <FontAwesomeIcon icon={faStore} /></i>
+                                                <i className="store"> <FontAwesomeIcon icon={faStore} /></i>
                                                     <i> <FontAwesomeIcon icon={faFacebook} /></i>
                                                     <i><FontAwesomeIcon icon={faTwitter} /></i>
                                                 </div>
@@ -226,7 +226,7 @@ const CarrosselGr = function() {
                                                     <img src={img1} alt="" />
                                                 </div>
                                                 <div className="media-icons">
-                                                <i> <FontAwesomeIcon icon={faStore} /></i>
+                                                <i className="store"> <FontAwesomeIcon icon={faStore} /></i>
                                                     <i> <FontAwesomeIcon icon={faFacebook} /></i>
                                                     <i><FontAwesomeIcon icon={faTwitter} /></i>
                                                 </div>
@@ -245,17 +245,7 @@ const CarrosselGr = function() {
                     </Swiper>
                 </div>
         </div>
-        <div className="textoborda">
-            <h2>Seu look sugerido foi:</h2>
-        </div>
-        <div className="carrossel-right">
-            <div className="Borda-look">
-
-                <img src={calca3} alt="" />
-
-            </div>
-        </div>
-        </div>
+       
         </>
  
      

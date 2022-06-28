@@ -1,0 +1,45 @@
+
+.main-guardaroupa{
+    flex-grow: 1;
+    width: 100vw;
+    background: #c3bad8c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.left-guardaroupa{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+
+.rigth-guardaroupa{
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+  
+}
+
+.card-imagem{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+}
+.card-imagem img{
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    padding: 10px;
+}
+.iconesg .iconegr1 .iconegr2 .iconegr3{
+   text-align: right;
+
+}
