@@ -1,41 +1,45 @@
-import "./GuardaRoupa.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import  img1 from "../imagens/c3.webp";
-import img2 from "../imagens/img2.jpg";
-import img3 from "../imagens/img3.jpg";
-import { faStore } from "@fortawesome/free-solid-svg-icons";
-const GuardaRoupa = function(){
-    return(
-        <>
-            <section>
-                <div className="container">
-                    <div className="content">
-                        <div className="card">
-                            <div className="card-content">
-                                <div className="image">
-                                    <img src={img1} alt="" />
-                                </div>
-                                 
-                                <div className="media-icons">
-                                   <i> <FontAwesomeIcon icon={faStore} /></i>
-                                    <i> <FontAwesomeIcon icon={faFacebook} /></i>
-                                    <i><FontAwesomeIcon icon={faTwitter} /></i>
-                                </div>
-                                <div className="NomeModelo">
-                                    <span className="nome">Calca</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+import './GuardaRoupa.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faHeart, faSquarePlus, faUser, faComment, faBookmark} from '@fortawesome/free-regular-svg-icons';
+import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles} from '@fortawesome/free-solid-svg-icons';
+import CarrosselGr from "./CarrosselGr";
+import imagem1 from "../imagens/roupa.jpg"
 
+const GuardaRoupa = function() {
+    return(   
+            <>
+                <div>
+                    <header>
+                        <h1>Cabeçalho Guarda-Roupa</h1>
+                        <div className='iconesgr'>
+                        <i className='iconegr1'><FontAwesomeIcon icon={faHeart} /></i>
+                        <i className='iconegr2'><FontAwesomeIcon icon={faComment} /></i>
+                        <i className='iconegr3'><FontAwesomeIcon icon={faBookmark} /></i>
+                        </div>
+                         
+                    </header>
                 </div>
-            </section>
-        </>
- 
-     
-    );
-  }
-  
-  export default GuardaRoupa;
+                <div className='main-guardaroupa'>
+                    <div className='left-guardaroupa'>
+                        <CarrosselGr></CarrosselGr>
+                        <CarrosselGr></CarrosselGr>
+                        <CarrosselGr></CarrosselGr>
+                    </div>
+                    <div className="rigth-guardaroupa">
+                        <div className="card-imagem">
+                            <img src={imagem1} alt="" />
+                        </div>
+                       <h3 className='texto-rigth'>Seu look sugerido foi:</h3> 
+                    </div>
+                </div>
+               
+                <div>
+                    <footer>
+                        fim
+                    </footer>
+                </div>
+            </>
+     );
+}
+
+export default GuardaRoupa;

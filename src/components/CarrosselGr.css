@@ -1,0 +1,114 @@
+
+.carrossel-left{
+    margin-right: auto;
+    width: 400px !important;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#f2f2f2 ;
+}
+section .card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 5%;
+    padding: 3px;
+    background: #7d2ae8;
+}
+
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    border: 3px solid #fff;
+}
+.card{
+    position: relative;
+    border-radius: 20px;
+    background: #fff;
+    margin: 50px 0;
+    width: 230px;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    height:35%;
+    width:100%;
+    background: #7d2ae8;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+}
+.card .media-icons{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icons i{
+    color: #fff;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.card .media-icons i:hover{
+    opacity: 1;
+}
+.card .NomeModelo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3px;
+    color: black;
+}
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+
+}
+.card .button button{
+    background-color: #7d2ae8;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.button button:hover{
+    background: #661666;
+}
+
+/*
+SWIPPER
+*/
+
+.painel-swipers {
+    width:770px;
+    justify-content: left;
+    align-content: left;
+    position: relative;
+
+}
+.painel-swipers .swipper-sobreposicao {
+    width: 100%;
+    height: auto;
+}
+
+

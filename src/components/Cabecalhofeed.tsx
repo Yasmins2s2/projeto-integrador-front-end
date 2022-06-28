@@ -1,5 +1,5 @@
 import './Cabecalhofeed.css';
-import './cabecalho2' ;
+import './CabecalhoFGR' ;
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHeart, faSquarePlus, faUser, faBookmark, faComment} from '@fortawesome/free-regular-svg-icons';
 import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles, faBookBookmark} from '@fortawesome/free-solid-svg-icons';
@@ -42,7 +42,7 @@ const Cabecalho = function() {
        </main>
        <footer>
          Rodapé
-         <div className='icones2'>
+         <div className='icones3'>
             <FontAwesomeIcon icon={faHouseChimney} />
             <FontAwesomeIcon icon={faMagnifyingGlass} />
             <FontAwesomeIcon icon={faWandMagicSparkles} />
