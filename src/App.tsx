@@ -22,7 +22,6 @@ const App = function() {
           <Route path='/feed' element={<Feed />} />
           <Route path='/CabecalhoFeed' element={<CabecalhoFeed />}/>
           <Route path='/CabecalhoFGR' element= {<CabecalhoFGR/>}/>
-          <Route path='/CarrosselGr' element={<CarrosselGr />}/>
           <Route path='/GuardaRoupa' element={<GuardaRoupa/>}/> 
           <Route path='/cadastro-guarda-roupa' element={<CadsatroGuardaRoupa />} />
         </Routes>
