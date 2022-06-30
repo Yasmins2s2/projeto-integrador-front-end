@@ -7,6 +7,8 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    height: 1000px;
+    
 }
 .left-guardaroupa{
     flex-grow: 1;
@@ -15,6 +17,8 @@
     justify-items: center;
     flex-direction: column;
     margin-left: 15px;
+    height: 500px;
+    
 }
 
 
@@ -26,18 +30,19 @@
 }
 
 .card-imagem{
-    width: 20px;
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 30px 35px;
+    padding: 60px 65px;
 }
 .card-imagem img{
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     border: 2px solid black;
     padding: 10px;
+    margin-right: 80px;
 }
 .iconesg .iconegr1 .iconegr2{
     justify-content: right;

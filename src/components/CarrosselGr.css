@@ -26,31 +26,34 @@ section .card .image img{
 }
 .card{
     position: relative;
-    border-radius: 20px;
+    border: none;
+    border-radius: 8px;
     background: #fff;
-    margin: 50px 0;
+    margin: 0px 0px 30px 0px;
     width: 230px;
 }
 .card::before{
     content: "";
     position: absolute;
+    left: 0px;
+    top: 0px;
     height:35%;
     width:100%;
     background: #7d2ae8;
-    border-radius: 20px 20px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 
 .card .card-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 8px;
     position: relative;
     z-index: 100;
 }
 .card .media-icons{
     position: absolute;
-    top: 20px;
+    top: 42px;
     right: 20px;
     display: flex;
     flex-direction: column;
@@ -61,6 +64,7 @@ section .card .image img{
     opacity: 0.6;
     transition: all 0.3s ease;
     cursor: pointer;
+
 }
 
 
@@ -72,8 +76,17 @@ section .card .image img{
     flex-direction: column;
     align-items: center;
     margin-top: 3px;
-    color: black;
+    color: black;    
 }
+
+.card .NomeModelo .nome {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
 .card .button{
     width: 100%;
     display: flex;
@@ -99,6 +112,10 @@ section .card .image img{
 SWIPPER
 */
 
+.swiper {
+    margin-bottom: 10px;
+}
+
 .painel-swipers {
     width:770px;
     justify-content: left;
@@ -111,4 +128,10 @@ SWIPPER
     height: auto;
 }
 
+.swiper-slide.ativa .card::before {
+    background-color: #000;
+}
 
+.swiper-slide.ativa .card .nome {
+    /*color: #fff;*/
+}
