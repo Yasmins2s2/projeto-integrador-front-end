@@ -6,10 +6,11 @@ import Cadastrar from './components/Cadastrar';
 import Feed from './components/Feed';
 import CabecalhoFeed from './components/Cabecalhofeed';
 import CabecalhoFGR from './components/CabecalhoFGR';
-import CarrosselGr from './components/CarrosselGr';
+//import CarrosselGr from './components/CarrosselGr';
 import GuardaRoupa from './components/GuardaRoupa';
 import LoginSite from './components/LoginSite';
 import Eldes from './Eldes';
+import RodapeFeedGuardaRoupa from './components/RodapeFeedGuardaRoupa';
 
 const App = function() {
   return (
@@ -24,6 +25,7 @@ const App = function() {
           <Route path='/CabecalhoFGR' element= {<CabecalhoFGR/>}/>
           <Route path='/GuardaRoupa' element={<GuardaRoupa/>}/> 
           <Route path='/cadastro-guarda-roupa' element={<CadsatroGuardaRoupa />} />
+          <Route path='/rodapefeedguarda' element={<RodapeFeedGuardaRoupa/>} />
         </Routes>
       </BrowserRouter>
 

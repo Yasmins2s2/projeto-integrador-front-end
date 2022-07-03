@@ -129,9 +129,9 @@ SWIPPER
 }
 
 .swiper-slide.ativa .card::before {
-    background-color: #000;
+    background-color:  #08002c;
 }
 
 .swiper-slide.ativa .card .nome {
-    /*color: #fff;*/
+    color: #fff;
 }

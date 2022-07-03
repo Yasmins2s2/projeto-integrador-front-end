@@ -7,14 +7,14 @@ import imagem1 from "../imagens/roupa.jpg"
 import { useState, useEffect } from 'react';
 import Peca, { TipoPeca } from '../models/Peca';
 import PecasService from '../services/Pecas';
+import CabecalhoFGR from './CabecalhoFGR';
+import RodapeFeedGuardaRoupa from './RodapeFeedGuardaRoupa';
 
 const GuardaRoupa = function() {
 
     const [pecas, setPecas] = useState<Peca[]>([]);
 
-    const carrosselAlterado = function(peca: Peca) {
-        alert(peca.nome)
-    };
+    const carrosselAlterado = function(peca: Peca) {};
 
     useEffect(function () {
         PecasService.lerTodas(function (pecas) {
@@ -24,17 +24,8 @@ const GuardaRoupa = function() {
     
     return(   
             <>
-                <div>
-                    <header>
-                        <h1>Cabeçalho Guarda-Roupa</h1>
-                        <div className='iconesgr'>
-                        <i className='iconegr1'><FontAwesomeIcon icon={faHeart} /></i>
-                        <i className='iconegr2'><FontAwesomeIcon icon={faComment} /></i>
-                        <i className='iconegr3'><FontAwesomeIcon icon={faBookmark} /></i>
-                        </div>
-                         
-                    </header>
-                </div>
+                    <CabecalhoFGR/>
+               
                 <div className='main-guardaroupa'>
                     <div className='left-guardaroupa'>
                         <CarrosselGr pecas={pecas.filter(function (peca) { return peca.tipo === TipoPeca.ParteCima})} onChange={carrosselAlterado} />
@@ -49,11 +40,9 @@ const GuardaRoupa = function() {
                     </div>
                 </div>
                
-                <div>
-                    <footer>
-                        fim
-                    </footer>
-                </div>
+                
+                   <RodapeFeedGuardaRoupa/>
+                
             </>
      );
 }
