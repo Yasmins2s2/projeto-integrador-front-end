@@ -1,10 +1,11 @@
 
 
-import './CabecalhoFGR.css' ;
+import './Feed.css' ;
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faHeart, faSquarePlus, faUser, faBookmark, faComment} from '@fortawesome/free-regular-svg-icons';
-import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles, faBookBookmark} from '@fortawesome/free-solid-svg-icons';
+import {faHeart, faBookmark, faComment, faCircleCheck} from '@fortawesome/free-regular-svg-icons';
 import imagem1 from "../imagens/MeninaDeCostas.jpg"
+import VogueBrasil from "../imagens/VogueBrasil.png"
+import vogue from '../imagens/vogue.png'
 import CabecalhoFGR from './CabecalhoFGR';
 import RodapeFeedGuardaRoupa from './RodapeFeedGuardaRoupa';
 
@@ -15,9 +16,9 @@ const Feed = function() {
       <main>
       <div className='border'>
         <div className='conteudo'>
-         <div className='Foto1'>
-           <img src={imagem1} alt="" />
-           <p>@Isabella</p>   
+         <div className='VogueBrasil'>
+           <img src={VogueBrasil} alt="" />
+           <p>@voguebrasil <FontAwesomeIcon icon={faCircleCheck} className='iconesf' /></p>   
            <div className='icones2'>
              <FontAwesomeIcon icon={faHeart} className='iconesf' /> 
              <FontAwesomeIcon icon= {faComment} className='iconesf'/> 
@@ -25,7 +26,7 @@ const Feed = function() {
              </div>
          </div>
          <div className='Foto1'>
-         <img src={imagem1} alt="" />
+         <img src={vogue} alt="" />
          <p>@Isabella</p> 
          </div>
          <div className='icones2'>

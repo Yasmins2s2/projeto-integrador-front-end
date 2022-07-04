@@ -2,7 +2,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import './Perfil.css'
 import './CarrosselGr.css'
-import ImagemPerfil from "../imagens/MeninaDeCostas.jpg"
+import ImagemPerfil from '../imagens/MeninaDeCostas.jpg'
+import LogoAppfel from '../imagens/LogoAppfel.jpeg'
+import PostIris from '../imagens/PostIris.jpg'
+import Iris from '../imagens/Iris.png'
+import modeloIris from '../imagens/modeloIris.png'
+import single from '../imagens/single.jpeg'
+import Appfel from '../imagens/Appfel.jpeg'
+import filme from '../imagens/filme.png'
 import RodapeFeedGuardaRoupa from './RodapeFeedGuardaRoupa';
 const Perfil = function(){
     return(
@@ -12,11 +19,9 @@ const Perfil = function(){
                         <div className="content">
                             <div className="card-content">
                                 <div className="image">
-                                    <img src={ImagemPerfil} alt="" />
-                                </div>
-                                <div className="media-icons">
-                                    <i className="store"> <FontAwesomeIcon icon={faCamera} /></i>
-                                </div>                              
+                                    < img src={LogoAppfel} alt="" /> 
+                                    <i className="camera"> <FontAwesomeIcon icon={faCamera} /></i>
+                                </div>                             
                             </div>                          
                         </div>
                     </div>
@@ -26,10 +31,10 @@ const Perfil = function(){
                 </div>
                 <div className='InformacoesPerfil'>
                     <div className='NomeUsuario'>
-                        <h3>AppFel</h3>
+                        <h3>AppFel AppFel</h3>
                     </div>
                     <div className='SobreNos'>
-                        <h3>Biografia</h3>
+                        <h3>Biografia:</h3> <h5>Amantes da moda, que admiram e eapreciam o trabalho da exceletissima Iria Apfel. Sendo assim, usamos seu nome como fonte de inspiração do nosso App.</h5>
                     </div>
                     <div className='localização'>
                       <h3> Localização: São Carlos, SP</h3>  
@@ -40,14 +45,14 @@ const Perfil = function(){
                 </div>
                 <div className='Publicacoes'>
                     <div className='Foto'>
-                        <img src={ImagemPerfil} alt="" />
-                        <img src={ImagemPerfil} alt="" />
-                        <img src={ImagemPerfil} alt="" />
+                        <img src={modeloIris} alt="" />
+                        <img src={PostIris} alt="" />
+                        <img src={single} alt="" />
                     </div>
                     <div className='Foto'>
-                        <img src={ImagemPerfil} alt="" />
-                        <img src={ImagemPerfil} alt="" />
-                        <img src={ImagemPerfil} alt="" />
+                        <img src={Iris} alt="" />
+                        <img src={filme} alt="" />
+                        <img src={Appfel} alt="" />
                     </div>
                 </div>
                 <RodapeFeedGuardaRoupa/>

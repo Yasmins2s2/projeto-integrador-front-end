@@ -8,9 +8,11 @@ import CabecalhoFGR from './components/CabecalhoFGR';
 //import CarrosselGr from './components/CarrosselGr';
 import GuardaRoupa from './components/GuardaRoupa';
 import LoginSite from './components/LoginSite';
+
 import Eldes from './Eldes';
 import RodapeFeedGuardaRoupa from './components/RodapeFeedGuardaRoupa';
 import Perfil from './components/Perfil';
+
 
 const App = function() {
   return (
@@ -22,6 +24,7 @@ const App = function() {
           <Route path='/login' element={<LoginSite/>} />
           <Route path='/cadastrar' element={<Cadastrar/>} />
           <Route path='/feed' element={<Feed />} />
+         
           <Route path='/CabecalhoFGR' element= {<CabecalhoFGR/>}/>
           <Route path='/GuardaRoupa' element={<GuardaRoupa/>}/> 
           <Route path='/cadastro-guarda-roupa' element={<CadsatroGuardaRoupa />} />

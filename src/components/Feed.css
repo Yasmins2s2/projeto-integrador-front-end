@@ -1,0 +1,32 @@
+
+
+h1{
+    color: white;
+}
+.Logo {
+    text-align: left;
+    font-family: 'Dorsa', sans-serif;
+    letter-spacing: .1em;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.icones {
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 40px;
+
+}
+.icones .text-header{
+    font-size: large;
+}
+.border{
+    margin-top: 100px;
+}
+.conteudo .VogueBrasil img{
+    width: 600px;
+}

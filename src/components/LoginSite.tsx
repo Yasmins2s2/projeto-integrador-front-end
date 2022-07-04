@@ -24,7 +24,8 @@ const LoginSite = function(){
                         <label htmlFor="senha"> Senha</label>
                         <input type="password" name="senha" placeholder="Senha"/>
                     </div> 
-                    <button className="btn-login"> Entrar</button>
+                    
+                    <Link to="/feed" className="btn-cadastroentrar">Entrar</Link>
                     <Link to="/cadastrar" className="btn-cadastrologin">Cadastrar</Link>
                 </div>
             </div>
