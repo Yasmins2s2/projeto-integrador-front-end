@@ -15,7 +15,7 @@ const CadsatroGuardaRoupa = function () {
 
     return (
         <>
-            <ul className="OpcoesPecasSobreposicao">
+            <ul className="OpcoesPecasCalcados">
                 {pecas.filter(function (peca) {
                     return peca.tipo === TipoPeca.Calcado
                 })

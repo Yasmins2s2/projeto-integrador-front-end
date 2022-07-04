@@ -4,13 +4,13 @@ import './App.css';
 import CadsatroGuardaRoupa from './CadastroGuardaRoupa';
 import Cadastrar from './components/Cadastrar';
 import Feed from './components/Feed';
-
 import CabecalhoFGR from './components/CabecalhoFGR';
 //import CarrosselGr from './components/CarrosselGr';
 import GuardaRoupa from './components/GuardaRoupa';
 import LoginSite from './components/LoginSite';
 import Eldes from './Eldes';
 import RodapeFeedGuardaRoupa from './components/RodapeFeedGuardaRoupa';
+import Perfil from './components/Perfil';
 
 const App = function() {
   return (
@@ -25,6 +25,7 @@ const App = function() {
           <Route path='/GuardaRoupa' element={<GuardaRoupa/>}/> 
           <Route path='/cadastro-guarda-roupa' element={<CadsatroGuardaRoupa />} />
           <Route path='/rodapefeedguarda' element={<RodapeFeedGuardaRoupa/>} />
+          <Route path='/Perfil' element={<Perfil/>} />
         </Routes>
       </BrowserRouter>
 
