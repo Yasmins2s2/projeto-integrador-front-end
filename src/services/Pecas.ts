@@ -1,16 +1,18 @@
+import camiseta_fem_rosa from '../imagens/calca_fem_rosa.png'
 import Peca, { TipoPeca } from "../models/Peca";
+
 
 const pecas = [
     {
         id_peca: 1,
         nome: 'Camiseta branca1',
-        url_imagem: '/content/calca2.png',
+        url_imagem: '../imagens/img1.jpg',
         tipo: TipoPeca.ParteCima,
     },
     {
         id_peca: 2,
         nome: 'Camiseta branca2',
-        url_imagem: '/content/calca2.png',
+        url_imagem: '../imagens/calca_fem_rosa.png',
         tipo: TipoPeca.ParteCima,
     },
     {

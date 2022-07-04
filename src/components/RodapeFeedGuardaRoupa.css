@@ -7,25 +7,11 @@ main{
     background: #9f55ff31;
 }
 
-.CabecalhoFeed{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:black;
-    width: 100vw;
-    padding: 25px 30px;
-}
+
 h1{
     color: white;
 }
-.Logo {
-    text-align: left;
-    font-family: 'Dorsa', sans-serif;
-    letter-spacing: .1em;
-    font-size: 25px;
-    font-weight: 400;
-    color: #fff;
-}
+
 
 .icones {
     text-align: right;
@@ -45,8 +31,9 @@ h1{
 }
 footer{
     background-color:black;
-    padding: 30px;
+    padding: 10px 30px;
     position:fixed;
+    z-index: 1;
 }
 .foto1{
     width:700px ;

@@ -1,49 +1,46 @@
 
 .main-guardaroupa{
     flex-grow: 1;
-    width: 100vw;
+    width: 100%;
     background: #c3bad8c4;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    height: 1000px;
-    
+    padding: 20px;   
+    padding-bottom: 80px; 
 }
+
 .left-guardaroupa{
-    flex-grow: 1;
+    flex-grow: 2;
     display: flex;
     justify-content: center;
     justify-items: center;
     flex-direction: column;
-    margin-left: 15px;
-    height: 500px;
-    
+    padding-left: 15px;
 }
 
 
 .rigth-guardaroupa{
     flex-grow: 1;
     display: flex;
-    justify-content: right;
-  
-}
-
-.card-imagem{
-    width: 80px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 60px 65px;
 }
-.card-imagem img{
-    width: 600px;
-    height: 600px;
-    border: 2px solid black;
-    padding: 10px;
-    margin-right: 80px;
+
+.pecas-selecionadas{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-height: calc(100% - 500px);
 }
+
+.pecas-selecionadas_peca {
+    width: 100%;
+    max-height: calc(100vh / 4);
+}
+
 .iconesg .iconegr1 .iconegr2{
     justify-content: right;
     justify-items: right;

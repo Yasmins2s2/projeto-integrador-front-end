@@ -12,32 +12,48 @@ import RodapeFeedGuardaRoupa from './RodapeFeedGuardaRoupa';
 
 const GuardaRoupa = function() {
 
-    const [pecas, setPecas] = useState<Peca[]>([]);
+    const [pecasCadastradas, setPecasCadastradas] = useState<Peca[]>([]);
+    const [pecasSelecionadas, setPecasSelecionadas] = useState<Peca[]>([]);
 
-    const carrosselAlterado = function(peca: Peca) {};
+    const carrosselAlterado = function(peca: Peca) {
+        const pecasFiltradas = pecasSelecionadas.filter(function (pecaSelecionada) { return pecaSelecionada.tipo !== peca.tipo });
+        setPecasSelecionadas([...pecasFiltradas, peca]);
+    };
 
     useEffect(function () {
         PecasService.lerTodas(function (pecas) {
-            setPecas(pecas);
+            setPecasCadastradas(pecas);
         });
     }, []);
+
+    useEffect(function () {
+        console.log(pecasSelecionadas);
+    }, [pecasSelecionadas]);
     
     return(   
             <>
                     <CabecalhoFGR/>
                
                 <div className='main-guardaroupa'>
-                    <div className='left-guardaroupa'>
-                        <CarrosselGr pecas={pecas.filter(function (peca) { return peca.tipo === TipoPeca.ParteCima})} onChange={carrosselAlterado} />
-                        <CarrosselGr pecas={pecas.filter(function (peca) { return peca.tipo === TipoPeca.ParteBaixo})}  onChange={carrosselAlterado} />
-                        <CarrosselGr pecas={pecas.filter(function (peca) { return peca.tipo === TipoPeca.Sobreposicao})}  onChange={carrosselAlterado} />
-                    </div>
-                    <div className="rigth-guardaroupa">
-                        <div className="card-imagem">
-                            <img src={imagem1} alt="" />
+                    <section className='left-guardaroupa'>
+                        <CarrosselGr pecas={pecasCadastradas.filter(function (peca) { return peca.tipo === TipoPeca.ParteCima})} onChange={carrosselAlterado} />
+                        <CarrosselGr pecas={pecasCadastradas.filter(function (peca) { return peca.tipo === TipoPeca.ParteBaixo})}  onChange={carrosselAlterado} />
+                        <CarrosselGr pecas={pecasCadastradas.filter(function (peca) { return peca.tipo === TipoPeca.Sobreposicao})}  onChange={carrosselAlterado} />
+                    </section>
+                    <section className='rigth-guardaroupa'>
+                        <h3 className='texto-rigth'>Seu look sugerido foi:</h3>
+                        <br/>
+
+                        <div className='pecas-selecionadas'>
+                            {pecasSelecionadas.map(function (peca) {
+                                return ( 
+                                    <img className='pecas-selecionadas_peca' src={peca.url_imagem} />
+                                )
+                            })}
                         </div>
-                       <h3 className='texto-rigth'>Seu look sugerido foi:</h3> 
-                    </div>
+
+                        
+                    </section>
                 </div>
                
                 
