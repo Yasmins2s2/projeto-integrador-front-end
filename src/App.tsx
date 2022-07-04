@@ -18,6 +18,7 @@ const App = function() {
 
       <BrowserRouter>
         <Routes>
+          <Route path= '/perfil' element={<Perfil/>}/>
           <Route path='/login' element={<LoginSite/>} />
           <Route path='/cadastrar' element={<Cadastrar/>} />
           <Route path='/feed' element={<Feed />} />
@@ -25,7 +26,7 @@ const App = function() {
           <Route path='/GuardaRoupa' element={<GuardaRoupa/>}/> 
           <Route path='/cadastro-guarda-roupa' element={<CadsatroGuardaRoupa />} />
           <Route path='/rodapefeedguarda' element={<RodapeFeedGuardaRoupa/>} />
-          <Route path='/Perfil' element={<Perfil/>} />
+          
         </Routes>
       </BrowserRouter>
 

@@ -4,7 +4,7 @@ import './CabecalhoFGR.css' ;
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHeart, faSquarePlus, faUser, faBookmark, faComment} from '@fortawesome/free-regular-svg-icons';
 import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles, faBookBookmark} from '@fortawesome/free-solid-svg-icons';
-import imagem1 from "../imagens/looks-tumblr.jpg"
+import imagem1 from "../imagens/MeninaDeCostas.jpg"
 import CabecalhoFGR from './CabecalhoFGR';
 import RodapeFeedGuardaRoupa from './RodapeFeedGuardaRoupa';
 

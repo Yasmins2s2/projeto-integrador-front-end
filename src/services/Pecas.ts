@@ -1,4 +1,3 @@
-import camiseta_fem_rosa from '../imagens/calca_fem_rosa.png'
 import Peca, { TipoPeca } from "../models/Peca";
 
 
@@ -17,14 +16,14 @@ const pecas = [
     },
     {
         id_peca: 3,
-        nome: 'Camiseta branca3',
-        url_imagem: '/content/imagens/calca2.png',
+        nome: 'Sueter Branco',
+        url_imagem: '/content/imagens/SueterBranco.png',
         tipo: TipoPeca.ParteCima,
     },
     {
         id_peca: 3,
-        nome: 'Calca Jeans/ Azul Claro',
-        url_imagem: '/content/imagens/calca_jogger_fem.png',
+        nome: 'Shorts Jeans/ Azul Escuro',
+        url_imagem: '/content/imagens/ShortsJeans.png',
         tipo: TipoPeca.ParteBaixo,
     },
     {
@@ -41,20 +40,20 @@ const pecas = [
     },
     {
         id_peca: 6,
-        nome: 'Casaquinho vermelh1o',
-        url_imagem: '/content/calca2.png',
+        nome: 'Tênis Preto',
+        url_imagem: '/content/imagens/TenisPreto.png',
         tipo: TipoPeca.Calcado,
     },
     {
         id_peca: 7,
-        nome: 'Casaquinho vermelho2',
-        url_imagem: '/content/calca2.png',
+        nome: 'Tênis Vans',
+        url_imagem: '/content/imagens/TenisVans.png',
         tipo: TipoPeca.Calcado,
     },
     {
         id_peca: 8,
-        nome: 'Casaquinho vermelho3',
-        url_imagem: '/content/calca2.png',
+        nome: 'Tênis Niike Marrom',
+        url_imagem: '/content/imagens/TenisNikeMarrom.png',
         tipo: TipoPeca.Calcado,
     },
 ];

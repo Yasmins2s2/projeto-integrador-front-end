@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Cadastrar.css"
-import ImagemCadastrar from "../imagens/digital.svg"
 import PaginaComum from "./PaginaComum";
 const Cadastrar = function(){
     return(
