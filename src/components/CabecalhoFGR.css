@@ -37,45 +37,6 @@ h1{
     column-gap: 40px;
 
 }
-.border{
-    margin: 0 500px 20px 500px ;
-    height: auto;
-    border: 2px solid black;
-    padding: auto;
-}
-footer{
-    background-color:black;
-    padding: 30px;
-    position:fixed;
-}
-.foto1{
-    width:700px ;
-    height: 500px;
-}
-.icones3{
-    padding: 10px;
-    font-size: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-.conteudo{
-    text-align: center;
-}
-.conteudo p{
-    text-align: left;
-    margin-left: 60px;
+.icones .text-header{
     font-size: large;
-}
-.conteudo .icones2{
-    text-align: right;
-    padding: 0 10px;
-    margin-right: 60px;
-}
-.icones3 .text-footer{
-   font-size: large;
-
-}
-.iconesf{
-    margin: 5px;
-    font-size: x-large;
 }

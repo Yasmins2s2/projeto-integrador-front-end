@@ -34,6 +34,9 @@
     flex-wrap: nowrap;
     align-items: center;
     max-height: calc(100% - 500px);
+    background: yellow;
+    padding: 50px;
+    border-radius: 5px;
 }
 
 .pecas-selecionadas_peca {

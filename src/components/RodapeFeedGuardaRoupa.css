@@ -17,7 +17,6 @@ h1{
     text-align: right;
     color: white;
     font-size: 30px;
-    
     display: flex;
     justify-content: flex-end;
     column-gap: 40px;
@@ -65,4 +64,7 @@ footer{
 .iconesf{
     margin: 5px;
     font-size: x-large;
+}
+.btn-rodape{
+    text-decoration: none;
 }

@@ -1,5 +1,4 @@
 import './CabecalhoFGR.css';
-import './CabecalhoSite.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHeart, faSquarePlus, faUser, faBookmark, faComment} from '@fortawesome/free-regular-svg-icons';
 import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles, faBookBookmark} from '@fortawesome/free-solid-svg-icons';
@@ -11,9 +10,9 @@ const CabecalhoFGR = function() {
             <h1>AppFell</h1>
           </div>
           <div className='icones'>
-            <FontAwesomeIcon icon={faHeart} />
-            <FontAwesomeIcon icon={faSquarePlus} />
-            <FontAwesomeIcon icon={faLocationArrow} />
+            <FontAwesomeIcon icon={faHeart} /> <p className='text-header'> Notificações</p>
+            <FontAwesomeIcon icon={faSquarePlus} /> <p className='text-header'>Postar</p> 
+            <FontAwesomeIcon icon={faLocationArrow} /><p className='text-header'>Mensagens</p> 
           </div>
        </header>
     </>

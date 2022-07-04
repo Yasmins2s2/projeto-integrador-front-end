@@ -12,25 +12,25 @@ const pecas = [
     {
         id_peca: 2,
         nome: 'Camiseta branca2',
-        url_imagem: '../imagens/calca_fem_rosa.png',
+        url_imagem: '/content/imagens/camiseta_fem_rosa.png',
         tipo: TipoPeca.ParteCima,
     },
     {
         id_peca: 3,
         nome: 'Camiseta branca3',
-        url_imagem: '/content/calca2.png',
+        url_imagem: '/content/imagens/calca2.png',
         tipo: TipoPeca.ParteCima,
     },
     {
         id_peca: 3,
         nome: 'Calca Jeans/ Azul Claro',
-        url_imagem: '/content/calca2.png',
+        url_imagem: '/content/imagens/calca_jogger_fem.png',
         tipo: TipoPeca.ParteBaixo,
     },
     {
         id_peca: 4,
         nome: 'Calca2',
-        url_imagem: '/content/calca2.png',
+        url_imagem: '/content/imagens/carlca_large_bege.png',
         tipo: TipoPeca.ParteBaixo,
     },
     {
@@ -43,19 +43,19 @@ const pecas = [
         id_peca: 6,
         nome: 'Casaquinho vermelh1o',
         url_imagem: '/content/calca2.png',
-        tipo: TipoPeca.Sobreposicao,
+        tipo: TipoPeca.Calcado,
     },
     {
         id_peca: 7,
         nome: 'Casaquinho vermelho2',
         url_imagem: '/content/calca2.png',
-        tipo: TipoPeca.Sobreposicao,
+        tipo: TipoPeca.Calcado,
     },
     {
         id_peca: 8,
         nome: 'Casaquinho vermelho3',
         url_imagem: '/content/calca2.png',
-        tipo: TipoPeca.Sobreposicao,
+        tipo: TipoPeca.Calcado,
     },
 ];
 

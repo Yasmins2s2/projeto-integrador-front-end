@@ -1,5 +1,5 @@
 enum TipoPeca {
-    Sobreposicao = 'SOBREPOSICAO',
+    Calcado = 'CALCADO',
     ParteCima = 'PARTE_CIMA',
     ParteBaixo = 'PARTE_BAIXO',
 }
