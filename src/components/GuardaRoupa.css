@@ -11,40 +11,35 @@
 }
 
 .left-guardaroupa{
-    flex-grow: 2;
+    flex-grow: 1.5;
     display: flex;
-    justify-content: center;
-    justify-items: center;
     flex-direction: column;
-    padding-left: 15px;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 
 .rigth-guardaroupa{
     flex-grow: 1;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 .pecas-selecionadas{
-    width: fit-content;
+    width: 200px;
+    max-height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    max-height: calc(100% - 500px);
     background: rgba(194, 134, 221, 0.568);
-    padding: 50px;
-    border-radius: 50px;
+    padding: 25px;
+    border-radius: 8px;
 }
 
 .pecas-selecionadas_peca {
     width: 100%;
     max-height: calc(100vh / 4);
-}
-
-.iconesg .iconegr1 .iconegr2{
-    justify-content: right;
-    justify-items: right;
+    object-fit: cover;
 }

@@ -9,10 +9,34 @@ const RodapeFeedGuardaRoupa = function() {
     <>
     <footer className="RodapeFeedGuarda-Roupa">
          <div className='icones3'>
-            <FontAwesomeIcon icon={faHouseChimney} /> <p className='text-footer'><Link to="/feed" className="btn-rodape">Feed</Link></p> 
-            <FontAwesomeIcon icon={faMagnifyingGlass} /><p className='text-footer'> Buscar</p> 
-            <FontAwesomeIcon icon={faShirt} /> <p className='text-footer'><Link to="/GuardaRoupa" className="btn-rodape">Guarda-Roupa</Link></p> 
-            <FontAwesomeIcon icon={faUser} /><p className='text-footer'><Link to="/Perfil" className="btn-rodape">Perfil</Link></p> 
+            <div>
+              <FontAwesomeIcon icon={faHouseChimney} />
+              <p className='text-footer'>
+                <Link to="/feed" className="btn-rodape">Feed</Link>
+              </p> 
+            </div>
+
+            <div>
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <p className='text-footer'>
+                <Link to="/buscar" className="btn-rodape">Buscar</Link>
+              </p>
+            </div>
+            
+            <div>
+              <FontAwesomeIcon icon={faShirt} /> 
+              <p className='text-footer'>
+                <Link to="/GuardaRoupa" className="btn-rodape">Guarda-Roupa</Link>
+              </p> 
+            </div>
+
+            <div>
+              <FontAwesomeIcon icon={faUser} />
+                <p className='text-footer'>
+                  <Link to="/Perfil" className="btn-rodape">Perfil</Link>
+                </p>
+            </div>
+             
           </div>
     </footer>
     </>

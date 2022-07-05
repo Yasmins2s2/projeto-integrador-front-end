@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './CabecalhoFGR.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHeart, faSquarePlus, faUser, faBookmark, faComment} from '@fortawesome/free-regular-svg-icons';
@@ -10,9 +11,25 @@ const CabecalhoFGR = function() {
             <h1>AppFell</h1>
           </div>
           <div className='icones'>
-            <FontAwesomeIcon icon={faHeart} /> <p className='text-header'> Notificações</p>
-            <FontAwesomeIcon icon={faSquarePlus} /> <p className='text-header'>Postar</p> 
-            <FontAwesomeIcon icon={faLocationArrow} /><p className='text-header'>Mensagens</p> 
+          <div>
+              <FontAwesomeIcon icon={faHeart} />
+              <p className='texto-header'>
+                <Link to="/notificações" className="btn-header">Notificações</Link>
+              </p>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faSquarePlus} />
+              <p className='texto-header'>
+                <Link to="/postar" className="btn-header">Postar</Link>
+              </p>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faLocationArrow} />
+              <p className='texto-header'>
+                <Link to="/mensagens" className="btn-header">Mensagens</Link>
+              </p>
+            </div>
+            
           </div>
        </header>
     </>

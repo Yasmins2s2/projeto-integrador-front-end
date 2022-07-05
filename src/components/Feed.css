@@ -24,15 +24,70 @@ h1{
 .icones .text-header{
     font-size: large;
 }
+.conteudo .icones2{
+    justify-content: center; 
+    padding: 10px;
+    display: inline-flex;
+}
 .border{
     margin-top: 100px;
 }
 .conteudo .VogueBrasil img{
     width: 600px;
 }
+.conteudo .VogueBrasil{
+    border: solid 1px black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
 .conteudo .Vogue img{
     width: 600px;
 }
-.conteudo .calvinklein img{
+.conteudo .Vogue{
+    border: solid 1px black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.conteudo .CalvinKlein img{
     width: 600px;
+}
+.conteudo .CalvinKlein{
+    border: solid 1px black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.conteudo .Pabllo img{
+    width: 600px;
+}
+.conteudo .Pabllo {
+    border: solid 1px black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.conteudo .LudSesion img{
+    width: 600px;
+}
+.conteudo .LudSesion{
+    border: solid 1px black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.conteudo .Anitta img{
+    width:600px ; 
+}
+.conteudo .Anitta {
+    border: solid 1px black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.conteudo .Kalijaner img{
+    width: 600px;
+    
+}
+.conteudo .Kalijaner{
+    border: solid 1px black;
+    padding: 10px;
+    margin-bottom: 5px;
 }

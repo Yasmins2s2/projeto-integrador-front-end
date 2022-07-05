@@ -1,29 +1,21 @@
 
-import './CabecalhoSite.css'
+import './buscar.css'
 import imagemLupa from '../imagens/lupa.svg'
-import { useState } from 'react';
+import RodapeFeedGuardaRoupa from './RodapeFeedGuardaRoupa';
 
 const Buscar = function(){
-    const [pesquisaAberto, setPesquisaAberto] = useState(false);
-    const campoPesquisaClicado = function () {
-        setPesquisaAberto(! pesquisaAberto);
-    };
-
     return (
-        <header className='CabecalhoSite'>
-            <main className='CabecalhoSiteFrom'>
-
-                <label className={pesquisaAberto ? 'pesquisa aberto' : 'pesquisa'}>
-                    <span className='label'>Pesquisar:</span>
-                    <input onClick={campoPesquisaClicado} type="text" className='PesquisaCabecalho' name='Search' placeholder='Pesquisar' />
-                    <a href="" className='botaoPesquisa'>
-                        <img src={imagemLupa} className='ImagemBotao' alt="Lupa"  />
-                    </a>
-                </label>
-
-            </main>
-
-        </header>
+        <>
+        <div className='search-box'>
+            <input type="text" className='search-txt' placeholder="Pesquisar" />
+            <a href="#" className='search-btn'>
+                <img src={imagemLupa} alt="Lupa" height={35} width={35}/>
+            </a>
+        </div>
+        <RodapeFeedGuardaRoupa/> 
+        </>
     )
+       
+            
 };
     export default Buscar;
