@@ -1,15 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*color: white;*/
-}
+
 footer{
     background: #8667b1;
     width: 100%;
     bottom: 0px;
     background: #111;
     color: #fff;
+    
 }
 
 footer a,

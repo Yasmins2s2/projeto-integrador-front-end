@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.RodapeFeedGuarda-Roupa {
+    background-color: black;
+    padding: 0px 30px;
+    position: fixed;
+    z-index: 1;
+}
+
+.icones3 {
+    padding: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.icones3 .text-footer {
+    font-size: small;
+}
+
+.btn-rodape {
+    text-decoration: none;
+}

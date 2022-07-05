@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./Cadastrar.css"
-import ImagemCadastrar from "../imagens/digital.svg"
 import PaginaComum from "./PaginaComum";
 const Cadastrar = function(){
     return(
@@ -28,7 +27,7 @@ const Cadastrar = function(){
                 
                         <div className="textfield">
                             <label htmlFor="date"> Data de Nascimento</label>
-                            <input type="date" name="Data" placeholder="Data"/>
+                            <input type="date" className="data" name="Data" placeholder="Data"/>
                     </div>
                         <div className="textfield">
                             <label htmlFor="phone"> Telefone</label>

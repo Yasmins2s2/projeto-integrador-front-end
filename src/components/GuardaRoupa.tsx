@@ -1,61 +1,82 @@
 import './GuardaRoupa.css'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faHeart, faComment, faBookmark} from '@fortawesome/free-regular-svg-icons';
-//import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles} from '@fortawesome/free-solid-svg-icons';
 import CarrosselGr from "./CarrosselGr";
-import imagem1 from "../imagens/roupa.jpg"
+
 import { useState, useEffect } from 'react';
 import Peca, { TipoPeca } from '../models/Peca';
 import PecasService from '../services/Pecas';
+import CabecalhoFGR from './CabecalhoFGR';
+import RodapeFeedGuardaRoupa from './RodapeFeedGuardaRoupa';
 
-const GuardaRoupa = function() {
+const GuardaRoupa = function () {
 
-    const [pecas, setPecas] = useState<Peca[]>([]);
+    const [pecasCadastradas, setPecasCadastradas] = useState<Peca[]>([]);
+    const [pecasSelecionadas, setPecasSelecionadas] = useState<Peca[]>([]);
 
-    const carrosselAlterado = function(peca: Peca) {
-        alert(peca.nome)
+    const carrosselAlterado = function (novaPeca: Peca) {
+        // remove da lista de peças já selecionadas, todas as peças do mesmo tipo da nova peça e adiciona a nova peça
+        let pecasFiltradas = pecasSelecionadas.filter(function (pecaSelecionada) { return pecaSelecionada.tipo !== novaPeca.tipo });
+        pecasFiltradas = [...pecasFiltradas, novaPeca];
+
+        // ordena lista por tipo de peça
+        const pecasOrdenadas = [
+            ...pecasFiltradas.filter(function (pecaFiltrada) { return pecaFiltrada.tipo === TipoPeca.ParteCima }),
+            ...pecasFiltradas.filter(function (pecaFiltrada) { return pecaFiltrada.tipo === TipoPeca.ParteBaixo }),
+            ...pecasFiltradas.filter(function (pecaFiltrada) { return pecaFiltrada.tipo === TipoPeca.Calcado })
+        ]
+
+        // atualiza lista de peças selecionadas, já filtrada e ordenada
+        setPecasSelecionadas(pecasOrdenadas);
     };
 
     useEffect(function () {
         PecasService.lerTodas(function (pecas) {
-            setPecas(pecas);
+            setPecasCadastradas(pecas);
         });
     }, []);
-    
-    return(   
-            <>
-                <div>
-                    <header>
-                        <h1>Cabeçalho Guarda-Roupa</h1>
-                        <div className='iconesgr'>
-                        <i className='iconegr1'><FontAwesomeIcon icon={faHeart} /></i>
-                        <i className='iconegr2'><FontAwesomeIcon icon={faComment} /></i>
-                        <i className='iconegr3'><FontAwesomeIcon icon={faBookmark} /></i>
+
+    return (
+        <>
+            <CabecalhoFGR />
+
+            <div className='main-guardaroupa'>
+                <section className='left-guardaroupa'>
+                    <CarrosselGr pecas={pecasCadastradas.filter(function (peca) { return peca.tipo === TipoPeca.ParteCima })} onChange={carrosselAlterado} />
+                    <CarrosselGr pecas={pecasCadastradas.filter(function (peca) { return peca.tipo === TipoPeca.ParteBaixo })} onChange={carrosselAlterado} />
+                    <CarrosselGr pecas={pecasCadastradas.filter(function (peca) { return peca.tipo === TipoPeca.Calcado })} onChange={carrosselAlterado} />
+                </section>
+                <section className='rigth-guardaroupa'>
+                    {
+                        pecasSelecionadas.length > 0 &&
+                        <div>
+                            <h3>Seu look escolhido foi:</h3>
+                            <br />
+
+                            <div className='pecas-selecionadas'>
+                                {pecasSelecionadas.map(function (peca) {
+                                    return (
+                                        <img key={peca.id_peca} className='pecas-selecionadas_peca' src={peca.url_imagem} />
+                                    )
+                                })}
+                            </div>
                         </div>
-                         
-                    </header>
-                </div>
-                <div className='main-guardaroupa'>
-                    <div className='left-guardaroupa'>
-                        <CarrosselGr pecas={pecas.filter(function (peca) { return peca.tipo === TipoPeca.ParteCima})} onChange={carrosselAlterado} />
-                        <CarrosselGr pecas={pecas.filter(function (peca) { return peca.tipo === TipoPeca.ParteBaixo})}  onChange={carrosselAlterado} />
-                        <CarrosselGr pecas={pecas.filter(function (peca) { return peca.tipo === TipoPeca.Sobreposicao})}  onChange={carrosselAlterado} />
-                    </div>
-                    <div className="rigth-guardaroupa">
-                        <div className="card-imagem">
-                            <img src={imagem1} alt="" />
+
+                    }
+                    {
+                        pecasSelecionadas.length === 0 &&
+                        <div>
+                            <h3>Selecione peças para montar seu look</h3>
+                            <br />
                         </div>
-                       <h3 className='texto-rigth'>Seu look sugerido foi:</h3> 
-                    </div>
-                </div>
-               
-                <div>
-                    <footer>
-                        fim
-                    </footer>
-                </div>
-            </>
-     );
+
+                    }
+                </section>
+            </div>
+
+
+            <RodapeFeedGuardaRoupa />
+
+        </>
+    );
 }
 
 export default GuardaRoupa;

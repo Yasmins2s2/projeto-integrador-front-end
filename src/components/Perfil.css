@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+
+
+
+.SobreNos, .NomeUsuario, .localização, .dataDeNascimento{
+    border: solid 1px black;
+    border-right: none;
+    border-top: none;
+    margin: 20px;
+    
+}
+.container .card-content .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #c58b8b;
+    margin-top: 50px;
+}
+
+.container .card-content .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.Publicacoes{
+    margin-bottom: 90px;
+}
+.Publicacoes .Foto img{
+    width: 420px;
+    height: 320px;
+    display: inline-block;
+    margin: 10px;
+    border: solid 2px black;
+}
+.editarPerfil button{
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.InformacoesPerfil {
+    
+}
