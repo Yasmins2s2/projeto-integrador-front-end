@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+
+
 
 .SobreNos, .NomeUsuario, .localização, .dataDeNascimento{
     border: solid 1px black;
@@ -38,5 +41,5 @@
     border-radius: 15px;
 }
 .InformacoesPerfil {
-    font-family: Arial, Helvetica, sans-serif;
+    
 }

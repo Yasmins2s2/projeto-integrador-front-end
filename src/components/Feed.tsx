@@ -7,6 +7,7 @@ import imagem1 from "../imagens/MeninaDeCostas.jpg"
 import VogueBrasil from "../imagens/VogueBrasil.png"
 import vogue from '../imagens/vogue.png'
 import CabecalhoFGR from './CabecalhoFGR';
+import calvinKlein from '../imagens/kalvinclain.png'
 import RodapeFeedGuardaRoupa from './RodapeFeedGuardaRoupa';
 
 const Feed = function() {
@@ -25,8 +26,8 @@ const Feed = function() {
              <FontAwesomeIcon icon={faBookmark} className='iconesf' />
              </div>
          </div>
-         <div className='Foto1'>
-         <img src={vogue} alt="" />
+         <div className='calvinklein'>
+         <img src={calvinKlein} alt="" />
          <p>@Isabella</p> 
          </div>
          <div className='icones2'>
@@ -34,8 +35,8 @@ const Feed = function() {
              <FontAwesomeIcon icon= {faComment} className='iconesf' />
              <FontAwesomeIcon icon={faBookmark} className='iconesf'/>
          </div>
-         <div className='Foto1'>
-         <img src={imagem1} alt="" />
+         <div className='Vogue'>
+         <img src={vogue} alt="" />
          <p>@Isabella</p> 
          </div>
          <div className='icones2'>

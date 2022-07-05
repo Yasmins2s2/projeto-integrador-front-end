@@ -14,6 +14,7 @@ import RodapeFeedGuardaRoupa from './RodapeFeedGuardaRoupa';
 const Perfil = function(){
     return(
         <>
+            
                <section>
                     <div className="container">
                         <div className="content">
@@ -55,6 +56,7 @@ const Perfil = function(){
                         <img src={Appfel} alt="" />
                     </div>
                 </div>
+                
                 <RodapeFeedGuardaRoupa/>
         </>
     )
