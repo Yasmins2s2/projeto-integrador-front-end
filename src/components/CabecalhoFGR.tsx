@@ -16,7 +16,7 @@ const CabecalhoFGR = function() {
                 <label className={'foto'}>
                     <span className='label'>Pesquisar:</span>
                    
-                    <a href="" className='botaoPesquisa'>
+                    <a href="" className='botaoPesquisa1'>
                         <img src={imagemLupa} className='ImagemBotao' alt="Lupa"  />
                     </a>
                 </label>

@@ -4,6 +4,7 @@ import './App.css';
 import CadsatroGuardaRoupa from './CadastroGuardaRoupa';
 import Cadastrar from './components/Cadastrar';
 import Feed from './components/Feed';
+import PerfilUsuario from './components/PerfilUsuario';
 import CabecalhoFeed from './components/Cabecalhofeed';
 import CabecalhoFGR from './components/CabecalhoFGR';
 import CarrosselGr from './components/CarrosselGr';
@@ -17,9 +18,11 @@ const App = function() {
 
       <BrowserRouter>
         <Routes>
+          
           <Route path='/login' element={<LoginSite/>} />
           <Route path='/cadastrar' element={<Cadastrar/>} />
           <Route path='/feed' element={<Feed />} />
+          <Route path='/PerfilUsuario' element={<PerfilUsuario/>}/>
           <Route path='/CabecalhoFeed' element={<CabecalhoFeed />}/>
           <Route path='/CabecalhoFGR' element= {<CabecalhoFGR/>}/>
           <Route path='/GuardaRoupa' element={<GuardaRoupa/>}/> 

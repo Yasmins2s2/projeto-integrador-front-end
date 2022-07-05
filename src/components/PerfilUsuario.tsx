@@ -1,16 +1,15 @@
-import { Link } from "react-router-dom";
-import "./Cadastrar.css"
-import ImagemCadastrar from "../imagens/digital.svg"
-import PaginaComum from "./PaginaComum";
+import './PerfilUsuario.css';
+import imagemlogo from '../imagens/imagemlogo.png'
 const Cadastrar = function(){
     return(
-        <PaginaComum>
-             <div className="main-cadastrar">
-                <div className="left-cadastro">
-                    <h1>AppFel <br/> <br/>Faça seu login  <br/> e venha estilizar com a gente.</h1>
-                    
+        <>            
+        <div className="main-cadastrar">
+              
+                <div className="rigth-perfil">
+                    <img src={imagemlogo} alt=""  className='Foto'/>
                 </div>
-                <div className="rigth-cadastro">
+                   
+                
                     <div className="card-cadastro">
                             <h1>Cadastrar-se</h1>
                         <div className="textfield">
@@ -38,15 +37,14 @@ const Cadastrar = function(){
                             <label htmlFor="address"> CEP</label>
                             <input type="address" name="CEP" placeholder="CEP"/>
                         </div>
-                
-                        <button className="btn-cadastrar"> Cadastrar</button>
-                        <Link to="/login" className="btn-cadastrologin">Login</Link>
                     </div>
-                </div>
-            </div>
+                
+        </div>
+        </>
+
 
        
-        </PaginaComum>
+    
     
     );
 
