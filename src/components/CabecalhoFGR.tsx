@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import './CabecalhoFGR.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faHeart, faSquarePlus, faUser, faBookmark, faComment} from '@fortawesome/free-regular-svg-icons';
-import {faLocationArrow, faHouseChimney, faMagnifyingGlass, faWandMagicSparkles, faBookBookmark} from '@fortawesome/free-solid-svg-icons';
+import {faHeart, faSquarePlus} from '@fortawesome/free-regular-svg-icons';
+import {faLocationArrow} from '@fortawesome/free-solid-svg-icons';
 const CabecalhoFGR = function() {
     return (
     <>
