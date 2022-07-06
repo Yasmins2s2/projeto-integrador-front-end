@@ -1,6 +1,5 @@
 import './GuardaRoupa.css'
 import CarrosselGr from "./CarrosselGr";
-
 import { useState, useEffect } from 'react';
 import Peca, { TipoPeca } from '../models/Peca';
 import PecasService from '../services/Pecas';

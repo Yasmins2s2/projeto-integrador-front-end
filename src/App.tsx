@@ -20,6 +20,7 @@ const App = function() {
 
       <BrowserRouter>
         <Routes>
+          <Route path='/' element={<Cadastrar/>} />
           <Route path= '/perfil' element={<Perfil/>}/>
           <Route path='/login' element={<LoginSite/>} />
           <Route path='/cadastrar' element={<Cadastrar/>} />
